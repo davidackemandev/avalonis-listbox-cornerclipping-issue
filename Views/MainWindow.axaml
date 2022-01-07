@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:MyApp.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="MyApp.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="MyApp">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+<ListBox 
+    Background="#8d8d8d"
+    Width="200"
+    Height="200"
+    HorizontalAlignment="Left"
+    CornerRadius="9"
+    BorderBrush="#0000ff"
+    BorderThickness="2"
+    >
+    <ListBoxItem Background="#ff0000">Test</ListBoxItem>
+    <ListBoxItem>Test</ListBoxItem>
+    <ListBoxItem>Test</ListBoxItem>
+    <ListBoxItem>Test</ListBoxItem>
+    <ListBoxItem>Test</ListBoxItem>
+</ListBox>
+</Window>
